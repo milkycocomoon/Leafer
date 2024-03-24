@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leafer - Houseplant Encyclopedia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/icons/Leafer-logo-favicon.svg" type="image/x-icon">
+</head>
+<body>
+
+  <nav class="flex"></nav>
+
+  <header class="width paddings flex header">
+    <div class="flex column header-container">
+      <h1>Need plant care info?</h1>
+      <p>
+          Explore the green world with our plant care encyclopedia.
+          Find tips on watering, sunlight, and&nbsp;more!
+      </p>
+      <a href="#encyclopedia" class="header-animated">v</a>
+    </div>
+
+  </header>
+
+  <main class="bg-gradient">
+
+    <article class="width paddings" id='encyclopedia'>
+      <h2>Find a plant you need:</h2>
+
+      <div class="search-container accent">
+        <div class="flex">
+          <input type="text" placeholder="Search.." name="search" id="search" class="width-100 accent" autocomplete="off">
+          <button type="submit"><img src="./assets/icons/Search.svg" alt="Search icon"></button>
+        </div>
+      </div>
+
+      <div class="flex plants-container">
+        <div id="filters" class="filter-tab flex column">
+            <div id="filter-abc" class="flex wrap"></div>
+            <div id="filter-type" class="flex wrap">
+                <div class="button-abc type" id="Foliage"><img src="./assets/icons/Foliage-outline.svg" alt="Foliage"></div>
+                <div class="button-abc type" id="Flowering"><img src="./assets/icons/Flowering-outline.svg" alt="Flowering"></div>
+                <div class="button-abc type" id="Succulents"><img src="./assets/icons/Succulents-outline.svg" alt="Succulents"></div>
+            </div>
+        </div>
+
+        <div class="cards-container-noscroll">
+          <div id="cards" class="cards-container"></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="width paddings blog" id="blog">
+      <h2>Useful tips</h2>
+      <div class="flex">
+        <a class="blog-img" href="./pages/blog_starting-seeds-indoors.html">
+          <img src="./assets/images/blog/seeds.webp" alt="Growing seeds">
+          <div>
+            <h3>Starting Seeds Indoors</h3>
+            <p>Get a jump-start on your garden by starting seeds indoors. Many house plants can be grown from seeds...</p>
+          </div>
+        </a>
+        <a class="blog-img" href="./pages/blog_pests-and-deseases.html">
+          <img src="./assets/images/blog/pests.webp" alt="Pests on the stem">
+          <div>
+            <h3>Pests and Diseases</h3>
+            <p>Here you'll discover how to identify and tackle those house plant pests and house plant diseases like spider mites, fungus, aphids and other things that are bugging your plants...</p>
+          </div>
+        </a>
+        <a class="blog-img" href="./pages/blog_basic-care.html">
+          <img src="./assets/images/blog/care.webp" alt="Plant care">
+          <div>
+            <h3>Basic Care</h3>
+            <p>Let's take a look at some house plant care basics...</p>
+          </div>
+        </a>
+        <a class="blog-img" href="./pages/blog_propagation.html">
+          <img src="./assets/images/blog/propagation.webp" alt="Propagating stem cuttings">
+          <div>
+            <h3>Propagation</h3>
+            <p>Propagating means turning one plant into many. It's incredibly easy to do and a good way to clone your favourite plants...</p>
+          </div>
+          </a>
+      </div>
+    </article>
+
+    <article class="adv paddings">
+      <div class="width flex adv-container">
+        <div class="box-shadow-container">
+            <h3>Need simple<br>reminder app?</h3>
+            <p>Keep your plants happy with easy reminders for watering and care.</p>
+            <p>No more forgetting – just download and enjoy thriving green friends.</p>
+            <p>Your plants will love you for it!</p>
+        </div>
+        <img src="./assets/images/phone_mockup.webp" alt="Phone app">
+        <div>
+          <a href="" class="flex button button-blurry">
+            <img src="./assets/icons/Google-play-logo.svg" alt="Google Play icon">
+            <div>
+              <p>Download on the</p>
+              <h5>Google Play</h5>
+            </div>
+          </a>
+          <a href="" class="flex button button-blurry">
+            <img src="./assets/icons/Apple-logo.svg" alt="App store icon">
+            <div>
+              <p>Download on the</p>
+              <h5>App Store</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <footer></footer>
+
+  <script type="module" src="script.js"></script>
+  <script type="module" src="./js/generateAbc.js"></script>
+  <script type="module" src="./js/generatePlantCards.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leafer - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/icons/Leafer-logo-favicon.svg" type="image/x-icon">
+    <script src="./js/auth.js"></script>
+</head>
+<body>
+
+  <nav class="flex"></nav>
+
+  <main class="bg-gradient">
+    <form method="get" action="javascript: void(0);" id="login-form" class="width flex column auth-page" autocomplete="off" role="main">
+      <h2>Welcome!</h2>
+      <p>Thank you for taking care of plants, you make this world better</p>
+
+      <label class="flex auth-input">
+        <img src="./assets/icons/Username.svg" alt="Username icon">
+        <input type="text" class="width-100" name="username" placeholder="Username" required/>
+      </label>
+
+      <label class="flex auth-input">
+        <img src="./assets/icons/Email.svg" alt="Email icon">
+        <input type="email" class="width-100" name="email" placeholder="Email" required/>
+      </label>
+
+      <input type="checkbox" name="show-password" class="show-password remove" id="show-password"/>
+
+      <label class="flex auth-input">
+        <img src="./assets/icons/Password.svg" alt="Password icon">
+        <input type="text" class="width-100" name="password" placeholder="Password" required/>
+        <label class="label-show-password" for="show-password">
+          <img id="show" src="./assets/icons/Hide.svg" alt="Hide">
+        </label>
+      </label>
+
+      <p id="popup"></p>
+
+      <div class="flex column">
+        <input type="submit" value="Sing Up" class="width-100 button accent" onclick="imitationLogin()"/>
+        <p>Already have an account? <a href="./auth-singin.html" class="in-text-link">Sign In!</a></p>
+      </div>
+    </form>
+
+  </main>
+
+  <footer></footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
