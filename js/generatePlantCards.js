@@ -23,6 +23,15 @@ search.addEventListener('keyup', (e) => {
     });
     plants = filteredItemsArray;
     genCards(plants);
+
+    if (e.key === 'Enter' || e.key === '13'){
+        return window.location.href = '#filters';
+    }
+});
+
+const searchButton = document.querySelector('#searchButton');
+searchButton.addEventListener('click', () => {
+    return window.location.href = '#filters';
 });
 
 // Filters
@@ -97,14 +106,12 @@ const genCards = (plants) => {
 
     if (!cards.hasChildNodes()) {
         cards.style.display = 'flex';
-        cards.style.paddingRight = 0;
         cards.innerHTML = `
                           <p id="popup" style="width: 100%; padding: 0.5rem; color: var(--color-error-500); background-color: var(--color-error-200)">Plants are not found</p>
                           `;
         return;
     } else {
         cards.style.display = 'grid';
-        cards.style.paddingRight = '1rem';
     };
 
     // Get plantID
